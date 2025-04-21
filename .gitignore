@@ -1,0 +1,28 @@
+# Ignorar el entorno virtual
+env/
+venv/
+*/env/
+*/venv/
+
+# Ignorar cache de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar archivos de configuración local
+*.local
+*.env
+*.DS_Store
+
+# Ignorar dataset y modelos grandes
+dataset/
+*.h5
+*.hdf5
+*.pkl
+
+# Ignorar logs y métricas
+logs/
+*.png
+*.jpg
+*.csv
