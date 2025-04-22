@@ -21,6 +21,7 @@ while True:
     
     # Predecir
     prediction = model.predict(input_img)
+    print(prediction)
     class_id = int(prediction[0][0] > 0.5)
     label = "Marcador" if class_id == 0 else "Lapiz"
     confidence = prediction[0][0] if class_id == 1 else 1 - prediction[0][0]
